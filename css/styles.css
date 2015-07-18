@@ -1,26 +1,58 @@
+#container {
+	margin-left: 300px;
+}
+
+.items {
+	cursor: pointer;
+}
+
+
 .example-enter {
   opacity: 0.01;
-  transition: opacity .5s ease-in;
+  margin-left:100px;
+  transition: opacity .5s ease-in, margin-left 0.5s ease-in;
 }
 
 .example-enter.example-enter-active {
   opacity: 1;
+  margin-left:10px;
 }
 
 .example-leave {
   opacity: 1;
-  transition: opacity .5s ease-in;
+  margin-left:0px;
+  transition: opacity .5s ease-in, margin-left 0.5s ease-in;
 }
 
 .example-leave.example-leave-active {
-  opacity: 0.01;
+ 	margin-left:-100px;
+  	opacity: 0.01;
+}
+
+
+
+
+.oppositeDirection .example-enter {
+  margin-left:-100px;
+}
+
+.oppositeDirection .example-enter.example-enter-active {
+  margin-left:10px;
+}
+
+.oppositeDirection .example-leave {
+  margin-left:0px;
+}
+
+.oppositeDirection .example-leave.example-leave-active {
+ 	margin-left:100px;
 }
 
 
 
 .exampletwo-appear {
-  opacity: 0.01;
-  transition: opacity .5s ease-in;
+	opacity: 0.01;
+	transition: opacity .5s ease-in;
 
 }
 
