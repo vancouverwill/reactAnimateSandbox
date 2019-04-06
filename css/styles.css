@@ -10,23 +10,25 @@
 .example-enter {
   opacity: 0.01;
   margin-left:100px;
-  transition: opacity .5s ease-in, margin-left 0.5s ease-in;
+  transition: opacity 2.5s ease-in, margin-left 2.5s ease-in;
 }
 
 .example-enter.example-enter-active {
   opacity: 1;
-  margin-left:10px;
+  margin-left:20px;
 }
+
+
 
 .example-leave {
   opacity: 1;
   margin-left:0px;
-  transition: opacity .5s ease-in, margin-left 0.5s ease-in;
+  transition: opacity 2.5s ease-in, margin-left 2.5s ease-in;
 }
 
 .example-leave.example-leave-active {
  	margin-left:-100px;
-  	opacity: 0.01;
+  	opacity: 0.00;
 }
 
 
